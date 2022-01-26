@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Envoyer Mail{% endblock %}
+
+{% block body %}
+
+
+    <h1>Envoyer Mail</h1>
+
+{{ form_start(form) }}
+    {{ form_widget(form) }}
+
+{{ form_end(form) }}
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('js/images.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AutoMailController!{% endblock %}
+
+{% block body %}
+ {% for Client in Client  %}
+<center>
+        <div class="elementor-widget-container">
+                    </div>
+
+        <tr>{{  Client.getNom() }}</tr>
+        ||
+        <tr>{{  Client.getPrenom()}}</tr>
+        ||
+        <tr>{{  Client.getAdresse() }}</tr>
+       
+       ||
+         <tr>{{  Client.getEmail() }}</tr>
+        ||
+        
+       
+
+
+    {% endfor %}
+     </center>
+{% endblock %}

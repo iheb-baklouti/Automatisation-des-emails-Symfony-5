@@ -1,0 +1,16 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+doc_homepage:
+    path:     /
+    controller: App\Controller\AutoMailController::index
+    #defaults: { _controller: Default:index }
+
+mail:
+    path:     /mail
+    controller: App\Controller\AutoMailController::addAction
+    #defaults: { _controller: Default:index }
+afficheMail:
+    path:     /afficheMail
+    controller: App\Controller\AutoMailController::afficherMail
+    #defaults: { _controller: Default:index }
